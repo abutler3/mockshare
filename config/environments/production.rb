@@ -64,4 +64,12 @@ Mockshare::Application.configure do
   # Log the query plan for queries taking more than this (works
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
+
+  # Ensure you have defined default url options in your environments files. Here 
+  # is an example of default_url_options appropriate for a development environment 
+  # in config/environments/development.rb:
+
+  # config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+
+  # In production, :host should be set to the actual host of your application.
 end

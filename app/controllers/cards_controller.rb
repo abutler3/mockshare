@@ -1,4 +1,6 @@
 class CardsController < ApplicationController
+  before_filter :authenticate_user!, except: [:index]
+
   # GET /cards
   # GET /cards.json
   def index
@@ -24,7 +26,7 @@ class CardsController < ApplicationController
   # GET /cards/new
   # GET /cards/new.json
   def new
-    @card = Card.new
+    @card = current_user.cards.new
 
     respond_to do |format|
       format.html # new.html.erb
@@ -34,13 +36,14 @@ class CardsController < ApplicationController
 
   # GET /cards/1/edit
   def edit
-    @card = Card.find(params[:id])
+    @card = current_user.cards.find(params[:id])
+    #Change refer to cards by the current user
   end
 
   # POST /cards
   # POST /cards.json
   def create
-    @card = Card.new(params[:card])
+    @card = current_user.cards.new(params[:card])
 
     respond_to do |format|
       if @card.save
@@ -56,7 +59,7 @@ class CardsController < ApplicationController
   # PUT /cards/1
   # PUT /cards/1.json
   def update
-    @card = Card.find(params[:id])
+    @card = current_user.cards.find(params[:id])
 
     respond_to do |format|
       if @card.update_attributes(params[:card])
@@ -72,7 +75,7 @@ class CardsController < ApplicationController
   # DELETE /cards/1
   # DELETE /cards/1.json
   def destroy
-    @card = Card.find(params[:id])
+    @card = current_user.cards.find(params[:id])
     @card.destroy
 
     respond_to do |format|

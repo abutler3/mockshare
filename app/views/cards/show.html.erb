@@ -4,8 +4,13 @@
       <p>
         <%= @card.description %>
       </p>
-      <%= link_to 'Edit', edit_card_path(@card) %> |
-      <%= link_to 'Back', cards_path %>
+      <p>
+        By: <%= @card.user.name %>
+      </p>
+      <% if current_user == @card.user %>
+        <%= link_to 'Edit', edit_card_path(@card) %> |
+      <% end %>
+        <%= link_to 'Back', cards_path %>
     </div>
   </div>
 </div>

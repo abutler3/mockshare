@@ -1,16 +1,38 @@
 // $baseFontFamily: Oxygen;
 // @import url(http://fonts.googleapis.com/css?family=Oxygen);
-$btnPrimaryBackground: green;
-$navbarBackgroundHighlight: white;
-$navbarBackground: white;
-
+$btnPrimaryBackground: #FFCC00;
+$navbarBackgroundHighlight: #3366CC;
+$navbarBackground: #3366CC;
+$navbarLinkColor: white;
+$textColor: white;
+$linkColor: white;
+$heroUnitBackground: #333399;
+$wellBackground: #333399;
 @import 'bootstrap';
 
 
 body {
   padding-top: 60px;
+background-color:#269;
+background-image: -webkit-linear-gradient(white 2px, transparent 2px),
+-webkit-linear-gradient(0deg, white 2px, transparent 2px),
+-webkit-linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px),
+-webkit-linear-gradient(0deg, rgba(255,255,255,.3) 1px, transparent 1px);
+background-size:100px 100px, 100px 100px, 20px 20px, 20px 20px;
+background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px; background-color:#269;
+
+background-size:100px 100px, 100px 100px, 20px 20px, 20px 20px;
+background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px
 }
 
+.form-actions {
+  background-color: #333399;
+}
+
+.table-striped tbody > tr:nth-child(odd) > td,
+.table-striped tbody > tr:nth-child(odd) > th {
+  background-color: #CC9933;
+}
 
 @import 'bootstrap-responsive';
 
@@ -32,8 +54,4 @@ body {
 
 footer {
   margin-top: 50px;
-  color: $grayLight;
-  a {
-    color: $gray;
-  }
 }

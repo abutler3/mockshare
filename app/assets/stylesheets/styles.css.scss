@@ -11,7 +11,19 @@ body {
   padding-top: 60px;
 }
 
+
 @import 'bootstrap-responsive';
+
+@media (min-width: 1200px) {
+
+  /* line 565, ../../../../.rvm/gems/ruby-1.9.3-p194@rails3tutorial2ndEd/gems/bootstrap-sass-2.2.2.0/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+  .container,
+  .navbar-static-top .container,
+  .navbar-fixed-top .container,
+  .navbar-fixed-bottom .container {
+    width: 940px;
+  }
+}
 
 .navbar-inner {
   @include box-shadow(none !important);

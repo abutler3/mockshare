@@ -14,3 +14,9 @@
 /log/*.log
 /tmp
 .DS_Store
+doc/
+.project
+.idea
+
+# Ignore Paperclip uploaded files
+/public/system

@@ -1,4 +1,5 @@
 <tr>
+  <td><%= image_tag card.image(:thumb) %></td>
   <td><%= card.description %></td>
   <td><%= link_to 'Show', card %></td>
   <% if current_user == card.user %>

@@ -1,10 +1,10 @@
-<tr>
-  <td><%= image_tag card.image(:thumb) %></td>
-  <td><%= card.description %></td>
-  <td><%= link_to 'Show', card %></td>
+<div class="box">
+  <%= image_tag card.image(:square) %>
+  <%= card.description %>
+  <%= link_to 'Show', card %>
   <% if current_user == card.user %>
   <!-- Only show if logged in user created the card -->
-    <td><%= link_to 'Edit', edit_card_path(card) %></td>
-    <td><%= link_to 'Destroy', card, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <%= link_to 'Edit', edit_card_path(card) %>
+    <%= link_to 'Delete', card, method: :delete, data: { confirm: 'Are you sure?' } %>
   <% end %>
-</tr>
+</div>

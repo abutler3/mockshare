@@ -1,23 +1,7 @@
-<div class="well well-large">
-  <h1>Listing cards</h1>
+<div id="cards" class="well well-large">
 
-  <table class="table table-striped">
-    <thead>
-      <tr>
-        <th>Image</th>
-        <th>Description</th>
-        <th></th>
-        <th></th>
-        <th></th>
-      </tr>
-    </thead>
+  <%= render @cards %>
 
-    <tbody>
-        <%= render @cards %>
-    </tbody>
-  </table>
-
-  <br />
 
   <%= link_to 'New Card', new_card_path %>
 </div>

@@ -11,5 +11,8 @@ class Card < ActiveRecord::Base
   belongs_to :user
   has_attached_file :image, styles: { :thumb => "100x100#",
                                       :small  => "150x150>",
-                                      :medium => "200x200"  }
+                                      :square => "200x200>",
+                                      :medium => "300x300>"  },
+                            { :url => "/system/:hash.:extension",
+                              :hash_secret => }
 end

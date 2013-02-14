@@ -24,4 +24,6 @@ doc/
 # Config files
 /config/environments/production.rb
 /config/*.yml
-/*.log
+
+# Security
+/app/models/card.rb

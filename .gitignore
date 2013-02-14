@@ -20,3 +20,8 @@ doc/
 
 # Ignore Paperclip uploaded files
 /public/system
+
+# Config files
+/config/environments/production.rb
+/config/*.yml
+/*.log

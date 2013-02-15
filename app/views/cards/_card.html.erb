@@ -1,5 +1,5 @@
 <div class="box">
-  <%= image_tag card.image(:square) %>
+  <%= image_tag (card.image.url(:square)) %>
   <%= card.description %>
   <%= link_to 'Show', card %>
   <% if current_user == card.user %>

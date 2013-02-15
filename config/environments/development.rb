@@ -42,13 +42,12 @@ Mockshare::Application.configure do
 
   config.paperclip_defaults = {
     :storage => :s3,
-    :s3_protocol => 'http',
     :s3_credentials => {
-      :bucket => ENV['Mockupsv1'],
-      :access_key_id => ENV['AKIAIFNYFLLX5CKJYR4Q'],
-      :secret_access_key => ENV['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']
+      :bucket => '',
+      :access_key_id => '',
+      :secret_access_key => ''
     }
   }
 
-   Paperclip.options[:command_path] = "/usr/local/bin/"
+  Paperclip.options[:command_path] = "/usr/local/bin/"
 end

@@ -67,8 +67,10 @@ footer {
   -moz-border-radius: 5px;
   -o-border-radius: 5px;
   border-radius: 5px;
-  box-shadow: 1px 1px 10px #444;
+  box-shadow: 4px 4px 30px #444;
   width: 214px;
+  border: 2px solid white;
+  background-color: gray;
 }
 
 .box img {
@@ -77,4 +79,13 @@ footer {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -o-border-radius: 5px;
+}
+
+.show_solo {
+  margin: 0 auto;
+  width: 300px;
+}
+
+.description {
+  margin: 10px 0 5px;
 }

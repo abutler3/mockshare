@@ -16,6 +16,8 @@
         <ul class="nav pull-right">
 		  	<% if user_signed_in? %>
 			 <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>
+       <li><%= link_to 'New Mockup', new_card_path %></li>
+       <li><%= link_to "View my Mockups", cards_path %></li>
 		    <li><%= link_to "Edit Profile", edit_user_registration_path %></li>
 			<% else %>
           <li><%= link_to "Sign In", new_user_session_path %></li>

@@ -43,9 +43,9 @@ Mockshare::Application.configure do
   config.paperclip_defaults = {
     :storage => :s3,
     :s3_credentials => {
-      :bucket => 'Mockupsv1',
-      :access_key_id => 'AKIAIFNYFLLX5CKJYR4Q',
-      :secret_access_key => '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'
+      :bucket => '',
+      :access_key_id => '',
+      :secret_access_key => ''
     }
   }
 

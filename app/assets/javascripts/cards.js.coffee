@@ -4,4 +4,6 @@
 
 jQuery ->
   $('#cards').imagesLoaded ->
-    $('#cards').masonry itemSelector: ".box"
+    $('#cards').masonry
+      itemSelector: ".box"
+      columnWidth: 50
